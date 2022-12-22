@@ -63,7 +63,7 @@ $(OBJ_DIR)/$(NAME_MODULE): $(OBJ)
 copy:
 	scp -r ./* root@10.42.0.29:/root/workspace/devs/ak-base-linux
 
-.PHONY: flash
+.PHONY: run
 run:
 	@sudo LD_LIBRARY_PATH=/usr/local/lib/ $(OBJ_DIR)/$(NAME_MODULE)
 

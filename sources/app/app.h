@@ -10,16 +10,6 @@
 using namespace std;
 
 /*****************************************************************************/
-/* task GW_SYS define.
- */
-/*****************************************************************************/
-/* define timer */
-/* define signal */
-enum {
-	GW_SYS_WATCH_DOG_REPORT_REQ = AK_USER_DEFINE_SIG,
-};
-
-/*****************************************************************************/
 /*  task GW_RF24 define.
  */
 /*****************************************************************************/
@@ -102,25 +92,6 @@ enum {
 };
 
 /*****************************************************************************/
-/*  task GW_TASK_ZIGBEE define
- */
-/*****************************************************************************/
-/* define timer */
-/* define signal */
-enum {
-	GW_ZIGBEE_INIT = AK_USER_DEFINE_SIG,
-	GW_ZIGBEE_FORCE_START_COODINATOR,
-	GW_ZIGBEE_START_COODINATOR,
-	GW_ZIGBEE_FORCE_START_ROUTER,
-	GW_ZIGBEE_START_ROUTER,
-	GW_ZIGBEE_PERMIT_JOINING_REQ,
-	GW_ZIGBEE_BDB_START_COMMISSIONING,
-	GW_ZIGBEE_ZCL_CMD_HANDLER,
-	GW_ZIGBEE_GET_MAC_ADDR_REQ,
-	GW_ZIGBEE_TEST
-};
-
-/*****************************************************************************/
 /*  task GW_TASK_DEBUG_MSG define
  */
 /*****************************************************************************/
@@ -128,18 +99,6 @@ enum {
 /* define signal */
 enum {
 	GW_DEBUG_1 = AK_USER_DEFINE_SIG,
-	GW_DEBUG_2,
-	GW_DEBUG_3,
-	GW_DEBUG_4,
-	GW_DEBUG_5,
-	GW_DEBUG_6,
-	GW_DEBUG_7,
-	GW_DEBUG_8,
-	GW_DEBUG_9,
-	GW_DEBUG_10,
-	GW_DEBUG_11,
-	GW_DEBUG_12,
-	GW_DEBUG_13,
 };
 
 /*****************************************************************************/
@@ -152,9 +111,7 @@ enum {
 #define APP_FLAG_OFF								(0x00)
 #define APP_FLAG_ON									(0x01)
 
-#define APP_ROOT_PATH_DISK							"/root/fpt_gateway"
-#define APP_ROOT_PATH_RAM							"/run/fpt_gateway"
-
-extern app_config gateway_configure;
+#define APP_ROOT_PATH_DISK							"/root/ak-base-linux"
+#define APP_ROOT_PATH_RAM							"/run/ak-base-linux"
 
 #endif // __APP_H__

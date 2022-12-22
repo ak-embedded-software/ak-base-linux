@@ -108,7 +108,7 @@ static void link_phy_frame_send();
 q_msg_t gw_task_link_phy_mailbox;
 
 /* serail interface */
-#define LINK_PHY_DEV_PATH			"/dev/thesis_com_port"
+#define LINK_PHY_DEV_PATH			"/dev/ttyUSB0"
 #define LINK_PHY_RX_THREAD_BUFFER_SIZE		4096
 
 static int link_phy_fd;
