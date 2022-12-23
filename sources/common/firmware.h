@@ -1,5 +1,6 @@
 #ifndef __FIRMWARE_H__
 #define __FIRMWARE_H__
+
 #include <stdint.h>
 #include "app_data.h"
 

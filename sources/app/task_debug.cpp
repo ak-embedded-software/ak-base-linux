@@ -25,15 +25,11 @@
 
 q_msg_t gw_task_debug_mailbox;
 
-
 using namespace std;
 
-
-void fopen_s(FILE ** file_pointer, const char * fname, const char * mode)
-{
+void fopen_s(FILE ** file_pointer, const char * fname, const char * mode) {
 	*file_pointer = fopen(fname, mode);
 }
-
 
 void* gw_task_debug_entry(void*) {
 	ak_msg_t* msg = AK_MSG_NULL;

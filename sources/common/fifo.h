@@ -1,6 +1,5 @@
 #ifndef __FIFO_H__
 #define __FIFO_H__
-#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C"

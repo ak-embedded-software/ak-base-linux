@@ -43,5 +43,4 @@ enum {
 	AK_TASK_EOT_ID,
 };
 
-
 #endif //__TASK_LIST_IF_H__
