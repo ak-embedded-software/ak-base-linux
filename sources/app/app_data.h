@@ -66,10 +66,6 @@ enum app_data_error_code_e {
 /******************************************************************************
 * Commom data structure for transceiver data
 *******************************************************************************/
-#define CONFIGURE_PARAMETER_BUFFER_SIZE		256
-#define RF24_ENCRYPT_DECRYPT_KEY_SIZE		16
-extern uint8_t rf24_encrypt_decrypt_key[];
-
 #define FIRMWARE_PSK				0x1A2B3C4D
 #define FIRMWARE_LOK				0x1234ABCD
 

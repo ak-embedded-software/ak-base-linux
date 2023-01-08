@@ -10,8 +10,6 @@
 #include "app_dbg.h"
 #include "app_if.h"
 
-uint8_t rf24_encrypt_decrypt_key[] = {0x4C, 0xD4, 0x00, 0x08, 0x37, 0xB5, 0x18, 0x4C, 0x01, 0x21, 0x20, 0x46, 0x04, 0xF0, 0xC7, 0xF9};
-
 if_app_t if_app_list[] = {
 	/*	[id]				[socket_path]							[location_path]									[enable_laucher]*/
 	{	IF_TYPE_APP_GMNG,	(char*)"/tmp/gateway_app_manager",		(char*)"/usr/local/bin/gateway_app_manager",	ENABLE_LAUNCHER		},

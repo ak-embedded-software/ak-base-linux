@@ -13,9 +13,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-#include <ao/ao.h>
-#include <mpg123.h>
-
 #include "ak.h"
 #include "timer.h"
 
@@ -96,7 +93,7 @@ int32_t shell_fw(uint8_t* argv) {
 		APP_PRINT("[shell_fw] update slave boot request\n");
 		gateway_fw_dev_update_req_t gateway_fw_dev_update_req;
 		memset(&gateway_fw_dev_update_req, 0, sizeof(gateway_fw_dev_update_req_t));
-		strcpy(gateway_fw_dev_update_req.dev_bin_path, "/home/lenovo/workspace/dev/GaoKong/ak_base_kit_stm32l151/boot/build_ak-base-kit-stm32l151-boot/ak-base-kit-stm32l151-boot.bin");
+		strcpy(gateway_fw_dev_update_req.dev_bin_path, "/home/lenovo/workspace/dev/GaoKong/ak-base-kit-stm32l151/boot/build_ak-base-kit-stm32l151-boot/ak-base-kit-stm32l151-boot.bin");
 		gateway_fw_dev_update_req.type_update   = TYPE_UPDATE_TARTGET_BOOT;
 		gateway_fw_dev_update_req.source_if_type = IF_TYPE_UART_GW;
 		gateway_fw_dev_update_req.target_task_id = AC_TASK_FW_ID;
@@ -114,7 +111,7 @@ int32_t shell_fw(uint8_t* argv) {
 		APP_PRINT("[shell_fw] update slave app request\n");
 		gateway_fw_dev_update_req_t gateway_fw_dev_update_req;
 		memset(&gateway_fw_dev_update_req, 0, sizeof(gateway_fw_dev_update_req_t));
-		strcpy(gateway_fw_dev_update_req.dev_bin_path, "/home/lenovo/workspace/dev/GaoKong/ak_base_kit_stm32l151/application/build_ak-base-kit-stm32l151-application/ak-base-kit-stm32l151-application.bin");
+		strcpy(gateway_fw_dev_update_req.dev_bin_path, "/home/lenovo/workspace/dev/GaoKong/ak-base-kit-stm32l151/application/build_ak-base-kit-stm32l151-application/ak-base-kit-stm32l151-application.bin");
 
 		gateway_fw_dev_update_req.type_update   = TYPE_UPDATE_TARTGET_APP;
 		gateway_fw_dev_update_req.source_if_type = IF_TYPE_UART_GW;
@@ -133,7 +130,7 @@ int32_t shell_fw(uint8_t* argv) {
 		APP_PRINT("[shell_fw] update slave app request via rf24\n");
 		gateway_fw_dev_update_req_t gateway_fw_dev_update_req;
 		memset(&gateway_fw_dev_update_req, 0, sizeof(gateway_fw_dev_update_req_t));
-		strcpy(gateway_fw_dev_update_req.dev_bin_path, "/home/lenovo/workspace/dev/GaoKong/ak_base_kit_stm32l151/application/build_ak-base-kit-stm32l151-application/ak-base-kit-stm32l151-application.bin");
+		strcpy(gateway_fw_dev_update_req.dev_bin_path, "/home/lenovo/workspace/dev/GaoKong/ak-base-kit-stm32l151/application/build_ak-base-kit-stm32l151-application/ak-base-kit-stm32l151-application.bin");
 		gateway_fw_dev_update_req.type_update   = TYPE_UPDATE_TARTGET_APP;
 		gateway_fw_dev_update_req.source_if_type = IF_TYPE_RF24_GW;
 		gateway_fw_dev_update_req.target_task_id = AC_TASK_FW_ID;

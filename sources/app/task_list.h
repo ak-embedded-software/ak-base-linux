@@ -22,7 +22,7 @@
 /** default if_des_type when get pool memory
  * this define MUST BE coresponding with app.
  */
-#define AK_APP_TYPE_IF						IF_TYPE_APP_GW
+#define AK_APP_TYPE_IF	IF_TYPE_APP_GW
 
 enum {
 	/* SYSTEM TASKS */
