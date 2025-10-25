@@ -1,5 +1,5 @@
 # AK - Base Linux
-[<img src="https://github.com/epcbtech/ak-base-kit-stm32l151/blob/main/hardware/images/ak-embedded-software-logo.jpg" width="240"/>](https://github.com/epcbtech/ak-base-kit-stm32l151/blob/main/hardware/images/ak-embedded-software-logo.jpg)
+[<img src="https://github.com/ak-embedded-software/ak-base-kit-stm32l151/blob/main/hardware/images/ak-embedded-software-logo.jpg" width="240"/>](https://github.com/ak-embedded-software/ak-base-kit-stm32l151/blob/main/hardware/images/ak-embedded-software-logo.jpg)
 
 ### Reference
 | Topic | Link |
